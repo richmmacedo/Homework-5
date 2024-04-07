@@ -1,0 +1,151 @@
+body {
+    background-color: #000;
+    color: #ec7357;
+    font-family: "Maiden Orange", serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.phone-screen {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.phone-screen .content-wrapper {
+    z-index: 2;
+    position: relative;
+    top: 80px;
+}
+.phone-screen .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-circles .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ec725791;
+}
+
+.background-circles .circle:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    top: -4%;
+    left: -20%;
+}
+
+.background-circles .circle:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 70%;
+}
+
+.background-circles .circle:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    top: 70%;
+    left: -25%;
+}
+
+.background-circles .circle:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    left: 60%;
+}
+
+.background-circles .circle:nth-child(4) {
+    width: 130px;
+    height: 130px;
+    top: 95%;
+    left: 30%;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, .5fr);
+    gap: 10px;
+}
+
+.button-container a {
+    background-color: none;
+    border: 3px solid #754f44;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #ec7357;
+    text-decoration: none;
+
+}
+.button:hover {
+    background-color: #3d405b;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-justify: center;
+}
+
+#back-button {
+    background-color: #ec7357;
+    color: black;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+#back-button:hover {
+    background-color: #754f44;
+    color: white;
+}
+
+.button_start:hover {
+    background-color: #3d405b;
+    }

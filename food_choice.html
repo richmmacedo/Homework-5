@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button-container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, .5fr);
+            gap: 10px;
+        }
+
+        .flag {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="background.css">
+
+</head>
+<body>
+    <div class="phone-screen">
+        <div class="background-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="title-container">
+                    <h1>What type of food would you<br>like to order?</h1>
+                </div>
+                <div class="button-container">
+                    <a class="button" href="#">
+                        <img src="Assets\flag-for-flag-india-svgrepo-com.svg" alt="Indian Flag" class="flag">
+                        <br>
+                        Indian
+                    </a>
+                    <a class="button" href="#">
+                        <img src="Assets\flag-for-flag-china-svgrepo-com.svg" alt="Chinese Flag" class="flag">
+                        <br>
+                        Chinese
+                    </a>
+                    <a class="button" href="rest_picker.html">
+                        <img src="Assets\flag-for-flag-brazil-svgrepo-com.svg" alt="Brazilian Flag" class="flag">
+                        <br>
+                        Brazilian
+                    </a>
+                    <a class="button" href="#">
+                        <img src="Assets\flag-for-flag-japan-svgrepo-com.svg" alt="Japanese Flag" class="flag">
+                        <br>
+                        Japanese
+                    </a>
+                    <a class="button" href="#">
+                        <img src="Assets\flag-for-flag-thailand-svgrepo-com.svg" alt="Thai Flag" class="flag">
+                        <br>
+                        Thai
+                    </a>
+                    <a class="button" href="#">
+                        <img src="Assets\flag-for-flag-italy-svgrepo-com.svg" alt="Italian Flag" class="flag">
+                        <br>
+                        Italian
+                    </a>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <a class="button" onclick="window.location.href='opening.html'" id="back-button">Back</a>
+                <div class="circle-progress">
+                    <div class="circle filled"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

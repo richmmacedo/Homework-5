@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button-container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, .5fr);
+            gap: 10px;
+        }
+
+        .flag {
+            width: 20px;
+            height: 20px;
+        }
+
+        #subtitle {
+            margin-top: 0;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="background.css">
+
+</head>
+<body>
+    <div class="phone-screen">
+        <div class="background-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="title-container">
+                    <h1>When do you want<br> your food by?</h1>
+                </div>
+                <div class="title-container" id="subtitle">
+                    <h3>By choosing a time slot, you will be paired with others lowering the price of fees.</h3>
+                </div>
+                <div class="button-container">
+                    <a class="button" href="#">
+                        4:00pm - 5:00pm
+                    </a>
+                    <a class="button" href="matching_screen1.html">
+                        5:00pm - 6:00pm
+                    </a>
+                    <a class="button" href="#">
+                        6:00pm - 7:00pm
+                    </a>
+                    <a class="button" href="#">
+                        ASAP
+                    </a>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <a class="button" onclick="window.location.href='opening.html'" id="back-button">Back</a>
+                <div class="circle-progress">
+                    <div class="circle filled"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
