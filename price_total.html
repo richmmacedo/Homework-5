@@ -13,11 +13,8 @@
             margin-top: 20px;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            grid-template-rows: repeat(3, .5fr);
+            grid-template-rows: repeat(4, .5fr);
             gap: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
         }
 
         #button-container2 a {
@@ -43,18 +40,44 @@
         }
         .minus {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 40;
             margin: 0 10px;
         }
         .plus {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 40;
             margin: 0 10px;
         }
 
-        .number {
-            font-size: 30px;
+        h1 {
+            font-size: 38px;
         }
+
+        h2 {
+            font-size: 20px;
+        }
+
+
+        h3 {
+            font-size: 25px;
+            margin-block-start: 0;
+        }
+
+        h4 {
+            color: black;
+            text-align: right;
+            align-items: left;
+            padding-left: 22px;
+            padding-right: 22px;
+            font-size: 20px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .title-container {
+            display: inline;
+        }
+
         .menu-bar {
             position: absolute;
             bottom: 0;
@@ -76,6 +99,22 @@
             padding: 10px 20px;
             transition: background-color 0.3s;
         }
+
+        .button-container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, .5fr);
+            gap: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .button-container a{
+            border: 1px solid #111111;
+            text-align: center;
+            color:  #111111;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -83,47 +122,31 @@
         <div class="background-circles">
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
         </div>
         <div class="content-wrapper">
             <div class="content">
                 <div class="title-container">
-                    <h1>Which items would you <br> like to order?</h1>
-                </div>
-                <div class="button-container" id="button-container">
-                    <a class="button" href="#">
-                        Carne de Panela (Beef Stew)
-                    </a>
-                    <div class="quantity-changer">
-                        <div class="minus" id="minus1">- </div>
-                        <div class="number" id="number1">  0  </div>
-                        <div class="plus" id="plus1"> + </div>
-                    </div>
-                    <a class="button" href="#">
-                        Pao de Queijo (6 pieces of cheese bread)
-                    </a>
-                    <div class="quantity-changer">
-                        <div class="minus" id="minus2">- </div>
-                        <div class="number" id="number2">  0  </div>
-                        <div class="plus" id="plus2"> + </div>
-                    </div>
-                    <a class="button" href="#">
-                        Frango com Quiabo (Chicken with Okra)
-                    </a>
-                    <div class="quantity-changer">
-                        <div class="minus" id="minus3">- </div>
-                        <div class="number" id="number3">  0  </div>
-                        <div class="plus" id="plus3"> + </div>
-                    </div>
+                    <h1>Checkout</h1>
                 </div>
         </div>
-        <div id="button-container2">
-            <a class="button_start" href="time_selector.html">Next</a>
+        <div>
+            <h3>Order Summary</h3>
+            <h4>Subtotal - $8.59</h4>
+            <h4>Taxes (Split by 4) - $0.51</h4>
+            <h4>Total - $8.80</h4>
+            <h3>Payment</h3>
+            <h4>AMEX - 2222</h4>
+            <h2>You are saving $1.53 on this group order!</h2>
         </div>
-        <div class="progress-bar">
-            <a class="button" onclick="window.location.href='food_choice.html'" id="back-button">Back</a>
+        <div class="button-container">
+            <a class="button" href="matching_screen2.html">
+                <strong>Confirm Order <br>
+            </a>
+            <a class="button" onclick="window.location.href='location.html'" id="back-button">Back</a>
+
         </div>
+
+
         </div>
         <div class="menu-bar">
             <a href="food_choice.html">Order Now</a>
@@ -131,5 +154,6 @@
             <a href="map.html">Orders Map</a>
         </div>
     </div>
+
 </body>
 </html>

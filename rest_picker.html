@@ -10,6 +10,27 @@
             grid-template-rows: repeat(4, .5fr);
             gap: 10px;
         }
+        .menu-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #754f44; /* Dark background for visibility */
+            color: white;
+            text-align: center;
+            padding: 10px 0; /* Some padding top and bottom */
+            display: flex;
+            justify-content: space-around; /* This spreads out the menu items evenly */
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.5); /* Optional: adds shadow for some depth */
+            z-index: 1;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,6 +88,11 @@
                 <div class="circle"></div>
             </div>
         </div>
+        </div>
+        <div class="menu-bar">
+            <a href="food_choice.html">Order Now</a>
+            <a href="home.html">Home</a>
+            <a href="map.html">Orders Map</a>
         </div>
     </div>
 </body>
